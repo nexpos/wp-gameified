@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/nexpos/gameified#readme",
   "dependencies": {
+    "ginger-grid": "^2.2.0",
+    "nifty-nav": "^3.0.0",
     "prelude-wp": "^4.2.4"
   }
 }

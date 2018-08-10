@@ -15,6 +15,7 @@ var phpFiles     = ['./**/*.php', './*.php'],
     imageFiles   = ['./assets/img/*.{jpg,png,gif}'],
     concatFiles  = [
       './node_modules/bowser/bowser.js',
+      './node_modules/nifty-nav/src/js/nifty-nav.js',
       './assets/js/*.js',
       '!./assets/js/font-awesome.config.js',
       '!./assets/js/theme.min.js',
@@ -62,7 +63,9 @@ gulp.task('sass', function() {
     .pipe(plumber())
     .pipe(sass({
       includePaths: [
-        './node_modules/normalize-scss/sass/'
+        './node_modules/normalize-scss/sass/',
+        './node_modules/nifty-nav/',
+        './node_modules/ginger-grid/'
       ]
     })
       .on('error', sass.logError)
