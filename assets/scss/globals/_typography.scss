@@ -2,7 +2,65 @@
   Typography
 ------------------------------------------------------------------------------*/
 
+// Headers
+h1 {
+  margin: 0 0 rem(30) 0;
+  font: 400 rem(55)/rem(60) $roboto;
+  color: $white;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 rem(20) 0;
+  font: 400 rem(35)/rem(37) $roboto;
+  color: $camaro;
+}
+
+h3 {
+  margin: 0 0 rem(5) 0;
+  font: 700 rem(25)/rem(27) $roboto;
+  color: $greed;
+}
+
+h4 {
+  margin: 0 0 rem(15) 0;
+  font: 400 rem(21)/rem(23) $roboto;
+  color: $camaro;
+}
+
+h5 {
+  margin: 0 0 rem(15) 0;
+  font: 400 rem(19)/rem(23) $roboto;
+  color: $slate;
+}
+
+h6 {
+  margin: 0 0 rem(15) 0;
+  font: 700 rem(21)/rem(23) $roboto;
+  color: $camaro;
+  text-transform: uppercase;
+}
+
+// Body Copy
+p, ol, ul, li {
+  margin: 0 0 rem(20) 0;
+  font: 400 rem(18)/rem(23) $open;
+  color: $slate;
+}
+
 // Links
 a {
-  text-decoration: none;
+  margin: 0 0 rem(20) 0;
+  font: 400 rem(18)/rem(23) $open;
+  color: $ocean;
+  text-decoration: underline;
+  transition: all .4s ease-in-out;
+}
+
+// Typography Classes
+
+.testimonial {
+  margin: 0 0 rem(15) 0;
+  font: 700 rem(15)/rem(25) $open;
+  color: $white;
 }

@@ -29,10 +29,9 @@
 
 <body <?php body_class(); ?>>
 
-  <?php // Header ?>
-  <header>
+  <?php // Header 
 
-  </header>
+  get_template_part('parts/site-header');?>
 
   <?php // Main Content ?>
   <main>

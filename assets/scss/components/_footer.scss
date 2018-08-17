@@ -1,3 +1,55 @@
 /*------------------------------------------------------------------------------
   Footer
 ------------------------------------------------------------------------------*/
+.site-footer {
+  padding: rem(50) 0 rem(40);
+
+  .footer-row {
+    padding-top: 30px;
+  }
+
+  .col-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a + a {
+    margin-left: rem(20);
+  }
+}
+
+.footer-logo {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  padding-bottom: 22px;
+}
+
+.site-info {
+  background-color: $slate;
+  padding-top: 27px;
+  display: flex;
+  justify-content: center !important;
+  p {
+    color: $white;
+  }
+  p + p {
+    padding: 0 20px;
+  }
+  a {
+    color: $white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.nav--footer {
+  li {
+    padding: 0 10px;
+  }
+  a {
+    color: $slate;
+    text-decoration: none;
+  }
+}

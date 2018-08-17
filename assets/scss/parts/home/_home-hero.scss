@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+  Home Hero
+------------------------------------------------------------------------------*/
+
+.home-hero__content {
+  padding: 285px 0;
+
+  p {
+    color: $white;
+  }
+}
+
+.home-button {
+  padding: 40px 0 0 0;
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .home-hero__content{
+    padding: 145px 0;
+  }
+}

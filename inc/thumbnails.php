@@ -15,4 +15,8 @@ function featuredURL($size = 'full'){
 
 if( function_exists('prelude_features') ){
   // Use add_image_size below to add additional thumbnail sizes
+  add_image_size( 'home-hero', 2800, 1800, array() );
+  add_image_size( 'icon', 100, 88, array() );
+  add_image_size( 'split-img', 1200, 1100, array('center', 'center') );
+  add_image_size( 'cta-img', 2800, 300, array('center', 'center') );
 }

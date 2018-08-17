@@ -1,3 +1,130 @@
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
+
+/* Nav Option 1 */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: .9375rem 0;
+
+  &__utility {
+    padding: rem(15) 0 rem(10);
+
+    li {
+      padding-top: 50px;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__mobile {
+    padding-top: rem(5);
+    background-color: $white;
+
+    .col-12 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+// Utility Nav
+.nav--utility {
+  padding-top: 20px;
+  ul {
+    justify-content: flex-end;
+  }
+
+  li + li {
+    margin-left: rem(55);
+  }
+
+  a {
+    padding: rem(5);
+    border-bottom: rem(1) solid transparent;
+    font: 600 rem(17)/1.18 $open;
+    color: $white;
+
+    &:hover {
+      color: $slate;
+    }
+  }
+
+  .current-menu-item a {
+    border-color: $white;
+  }
+}
+
+
+// Mobile Nav
+.nav--mobile {
+  &:last-of-type {
+    border-top: rem(1) solid rgba($slate, .3);
+  }
+
+  ul {
+    flex-wrap: wrap;
+  }
+
+  > ul > li + li {
+    border-top: rem(1) solid rgba($slate, .3);
+  }
+
+  li {
+    flex: 0 1 100%;
+  }
+
+  a {
+    padding: rem(15) rem(25);
+    font: 600 rem(18)/1.18 $open;
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $medium-breakpoint) {
+  .nav--primary {
+    > ul > li + li {
+      margin-left: rem(35);
+    }
+
+    a {
+      font-size: rem(20);
+    }
+
+    .nav-button a {
+      padding: rem(8) rem(35);
+      font-size: rem(20);
+    }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .site-header img {
+    max-width: 100%;
+    width: 50%;
+    padding: 10px 0;
+    position: absolute;
+  }
+  .mobile-header {
+    display: flex;
+    align-items: center;
+  }
+}

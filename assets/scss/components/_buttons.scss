@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------------------
+  Buttons
+------------------------------------------------------------------------------*/
+
+.button, button.button {
+  display: inline-block;
+  margin: 5px 0;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font: 700 rem(17)/rem(17) $roboto;
+  text-transform: uppercase;
+  border-radius: rem(100);
+  cursor: pointer;
+  &--primary {
+    padding: 15px 35px;
+    background: $greed;
+    color: $white;
+    &:hover {
+      background: $camaro;
+      color: $white;
+    }
+  }
+  &--secondary {
+    padding: 15px 45px;
+    background-color: $white;
+    border: 3px solid $white;
+    color: $ocean;
+    &:hover {
+      background-color: $greed;
+      border: 3px solid $white;
+      color: $white;
+    }
+  }
+}

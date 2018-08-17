@@ -32,6 +32,11 @@
 @import 'components/social-menu';
 @import 'components/header';
 @import 'components/footer';
+@import 'components/buttons';
+@import 'components/nav';
+
+// Parts
+@import 'parts/home/home-hero';
 
 // Plugin Overrides
 @import 'plugins/overrides';

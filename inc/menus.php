@@ -8,6 +8,7 @@
         'primary' => 'Primary Menu',
         'footer'  => 'Footer Menu',
         'social'  => 'Social Menu',
+        'utility' => 'Utility Menu'
       )
     );
   }
