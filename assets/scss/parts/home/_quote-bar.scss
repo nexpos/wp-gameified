@@ -1,0 +1,23 @@
+/*------------------------------------------------------------------------------
+  Quote Bar
+------------------------------------------------------------------------------*/
+.banner-image {
+  max-width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.testimonials-text {
+  padding-top: 30px;
+  p {
+    color: $white
+  }
+}
+
+@media screen and (max-width: $small-breakpoint) {
+  .testimonials-text {
+    div {
+      padding-top: 25px;
+    }
+  }
+}
