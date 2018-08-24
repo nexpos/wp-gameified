@@ -1,0 +1,173 @@
+/*------------------------------------------------------------------------------
+  Forms
+------------------------------------------------------------------------------*/
+.gform_wrapper {
+  margin: 0 !important;
+
+  form {
+    // Layout Styles
+    .gform_fields {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+
+    .ginput_container {
+      width: 100% !important;
+    }
+
+    .gfield {
+      margin-top: 0 !important;
+      padding: 0 !important;
+    }
+
+    .full-width {
+      flex-basis: 100%;
+    }
+
+    // Element Styles
+    label {
+      position: relative;
+      left: rem(5);
+      font: 300 rem(13)/rem(18) $roboto !important;
+      color: $slate;
+      z-index: 1;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"] {
+      width: 100% !important;
+      padding: rem(10) rem(5) !important;
+      border-radius: 0 !important;
+      border: none;
+      border-bottom: rem(1) solid $slate;
+      background-color: #fff;
+      font: 300 rem(16)/rem(17) $roboto !important;
+      color: $slate;
+    }
+
+    .ginput_container_select {
+      position: relative;
+
+      &:after {
+        position: absolute;
+        top: rem(5);
+        right: rem(15);
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        font-size: rem(20);
+        color: $greed;
+        -webkit-text-stroke: rem(1) $greed;
+        pointer-events: none;
+      }
+    }
+
+    select {
+      width: 100% !important;
+      padding: rem(10) rem(5) !important;
+      appearance: none;
+      border-radius: 0 !important;
+      border: none;
+      border-bottom: rem(1) solid $greed !important;
+      background-color: #fff;
+      font: 300 rem(16)/rem(17) $greed;
+      color: $greed;
+
+      // Hides IE Dropdown default arrow
+      &::-ms-expand {
+        display: none;
+      }
+    }
+
+    textarea {
+      width: 100% !important;
+      padding: rem(10) rem(5) !important;
+      border: rem(1) solid #000;
+      border-radius: 0 !important;
+      background-color: #fff;
+      font: 300 rem(16)/rem(17) $roboto !important;
+      color: $camaro;
+    }
+
+    .gfield_required {
+      color: $camaro;
+    }
+
+    // Submit Button
+    .gform_footer {
+      position: relative;
+      display: inline-block !important;
+      width: auto;
+      padding: 0 !important;
+    }
+
+    input[type="submit"] {
+      display: inline-block;
+      margin: 5px 0;
+      max-width: 100%;
+      text-align: center;
+      text-decoration: none;
+      font: 700 rem(17)/rem(17) $roboto;
+      text-transform: uppercase;
+      border-radius: rem(100);
+      cursor: pointer;
+      margin: 0 !important;
+      border: none;
+      background-color: $ocean;
+      padding: 15px 35px;
+      background: linear-gradient(to right, $ocean, $camaro);
+      color: $white;
+      transition: background .4s ease-out;
+
+      &:hover {
+        background: $camaro;
+        color: $white;
+        background-position:100px;
+      }
+
+      &:active,
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    // Active Styles
+    .animated {
+      label {
+        top: rem(37);
+        transition: all .3s ease;
+
+
+        &.active-position {
+          top: 0;
+        }
+
+        &.active-weight {
+          font-weight: 700 !important;
+          color: $greed;
+        }
+      }
+
+      // Label Color Change on colored backgrounds
+      &-color {
+        label.active-color {
+          color: $greed;
+        }
+      }
+
+      textarea {
+        &:active,
+        &:focus {
+          outline: none !important;
+          border: rem(1) solid $greed !important;
+        }
+      }
+
+      input, select,  {
+        &:active,
+        &:focus {
+          outline: none !important;
+          border-bottom: rem(1) solid $greed !important;
+        }
+      }
+    }
+  }
+}

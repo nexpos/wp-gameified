@@ -10,7 +10,7 @@
 
 <header class="container site-header">
   <div class="site-header__utility sm-hide">
-    <div class="row row--align-items-center">
+    <div class="row row--align-items-center row--full-width">
       <div class="col-3 sm-col-4">
         <?php // Logo ?>
         <a href="<?php echo esc_url(home_url()); ?>">

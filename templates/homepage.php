@@ -10,4 +10,5 @@
  */
 get_header();
 get_template_part('parts/home/home-hero');
+get_template_part('parts/home/large-text-section');
 get_footer(); ?>

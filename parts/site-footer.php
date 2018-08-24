@@ -10,7 +10,7 @@
 
 <footer class="site-footer">
   <hr>
-  <div class="container">
+  <div class="container sm-hide">
     <div class="row row--align-items-center footer-row">
       <div class="col-3 temp-logo">
         <!-- Temporary Logo -->
@@ -21,6 +21,19 @@
         <?php // Footer Menu
         wp_nav_menu( array('theme_location' => 'footer', 'container' => 'nav', 'container_class' => 'nav--footer') ); ?>
       </div>
+    </div>
+
+    <div class="container sm-only">
+      <div class="row footer-row">
+        <div class="col-12 col-centered">
+          <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_logo.png" alt="contract moxie logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-centered text-center">
+          <?php // Footer Menu
+          wp_nav_menu( array('theme_location' => 'footer', 'container' => 'nav', 'container_class' => 'nav--footer') ); ?>
+        </div>
     </div>
 
     <div class="row row--full-width">
