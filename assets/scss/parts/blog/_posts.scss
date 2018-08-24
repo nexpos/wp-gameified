@@ -1,0 +1,110 @@
+/*------------------------------------------------------------------------------
+  Posts Page
+------------------------------------------------------------------------------*/
+
+.blog-index {
+   padding: rem(90) 0 rem(67) 0;
+
+   &__post {
+     margin-bottom: rem(40);
+     &:after {
+       content: "";
+       display: block;
+       margin: 0 auto;
+       border-bottom: 2px solid $athens_gray;
+       width: 65%;
+       padding-bottom: rem(70);
+     }
+
+     &:last-of-type {
+       margin-bottom: rem(100);
+     }
+
+     .col-4 {
+       padding-right: rem(35);
+     }
+
+     h2 a {
+       display: inline;
+     }
+
+     a {
+       margin-top: rem(50);
+     }
+   }
+
+   &--border-bottom {
+     height: rem(2);
+     margin-top: rem(35);
+     background-color: $primary;
+   }
+
+   .nav-links {
+     display: flex;
+
+     .page-numbers {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0 rem(8);
+       width: rem(40);
+       height: rem(40);
+       border-radius: 50%;
+       background-color: $primary;
+       color: $white;
+       opacity: .3;
+
+       &.current,
+       &:hover {
+         opacity: 1;
+       }
+     }
+
+     .next,
+     .prev {
+       border-radius: 0;
+       background-color: transparent;
+       color: $primary;
+       opacity: 1;
+
+       i {
+         top: 0;
+         font-size: rem(40) !important;
+         transition: all .25s ease;
+       }
+
+       &:hover i {
+         color: $secondary;
+       }
+     }
+   }
+ }
+
+
+ // Media Queries
+ @media screen and (max-width: $small-breakpoint) {
+   .blog-index {
+     padding: rem(40) 0;
+
+     &__post {
+       margin-bottom: rem(30);
+
+       &:last-of-type {
+         margin-bottom: rem(20);
+       }
+
+       .col-4 {
+         padding-right: 0.8rem;
+       }
+
+       img {
+         display: block;
+         margin: 0 auto rem(30);
+       }
+
+       a {
+         margin-top: rem(20);
+       }
+     }
+   }
+ }

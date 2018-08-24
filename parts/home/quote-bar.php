@@ -4,8 +4,8 @@
  *
  * Template part used on the home page
  *
- * @package Contract Moxie
- * @author Factor1 Studios <factor1studios.com>
+ * @package GameiFIed
+ * @author Nick Exposito
  * @since 0.0.1
  */
 $banner_image = wp_get_attachment_image_src(get_field('banner_image_background'),'cta-img');

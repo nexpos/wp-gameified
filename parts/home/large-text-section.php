@@ -4,8 +4,8 @@
  *
  * Template part used globally
  *
- * @package Contract Moxie
- * @author Factor1 Studios <factor1studios.com>
+ * @package GameiFIed
+ * @author Nick Exposito
  * @since 0.0.1
  */
 // Large Text Custom Fields
