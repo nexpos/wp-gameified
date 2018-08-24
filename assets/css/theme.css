@@ -1776,7 +1776,7 @@ a {
 /* Nav Option 1 */
 
 .site-header {
-	position: absolute;
+	background-color: #a5c882;
 	top: 0;
 	left: 0;
 	z-index: 9999;
@@ -1804,7 +1804,6 @@ a {
 
 .site-header__mobile {
 	padding-top: 0.3125rem;
-	background-color: #ffffff;
 }
 
 .site-header__mobile .col-12 {
@@ -2223,7 +2222,7 @@ nav a {
 ------------------------------------------------------------------------------*/
 
 .home-hero__content {
-	padding: 285px 0;
+	padding: 100px 0 200px 0;
 }
 
 .home-hero__content p {
@@ -2270,6 +2269,117 @@ nav a {
 
 .testimonials-text p {
 	color: #ffffff;
+}
+
+/*------------------------------------------------------------------------------
+  Single Post
+------------------------------------------------------------------------------*/
+
+.single-blog-image {
+	padding: 68px;
+}
+
+.single-blog-content h2 {
+	padding: 30px 0;
+}
+
+/*------------------------------------------------------------------------------
+  Posts Page
+------------------------------------------------------------------------------*/
+
+.blog-index {
+	padding: 5.625rem 0 4.1875rem 0;
+}
+
+.blog-index__post {
+	margin-bottom: 2.5rem;
+}
+
+.blog-index__post:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	border-bottom: 2px solid #4e6766;
+	width: 65%;
+	padding-bottom: 4.375rem;
+}
+
+.blog-index__post:last-of-type {
+	margin-bottom: 6.25rem;
+}
+
+.blog-index__post .col-4 {
+	padding-right: 2.1875rem;
+}
+
+.blog-index__post h2 a {
+	display: inline;
+}
+
+.blog-index__post a {
+	margin-top: 3.125rem;
+}
+
+.blog-index--border-bottom {
+	height: 0.125rem;
+	margin-top: 2.1875rem;
+	background-color: #a5c882;
+}
+
+.blog-index .nav-links {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.blog-index .nav-links .page-numbers {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 0 0.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	background-color: #a5c882;
+	color: #ffffff;
+	opacity: .3;
+}
+
+.blog-index .nav-links .page-numbers.current,
+.blog-index .nav-links .page-numbers:hover {
+	opacity: 1;
+}
+
+.blog-index .nav-links .next,
+.blog-index .nav-links .prev {
+	border-radius: 0;
+	background-color: transparent;
+	color: #a5c882;
+	opacity: 1;
+}
+
+.blog-index .nav-links .next i,
+.blog-index .nav-links .prev i {
+	top: 0;
+	font-size: 2.5rem !important;
+	-webkit-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+.blog-index .nav-links .next:hover i,
+.blog-index .nav-links .prev:hover i {
+	color: #2075aa;
 }
 
 /*----------------------------------------------------------------------------
@@ -4343,6 +4453,31 @@ nav a {
 
 .testimonials-text div {
 	padding-top: 25px;
+}
+
+.blog-index {
+	padding: 2.5rem 0;
+}
+
+.blog-index__post {
+	margin-bottom: 1.875rem;
+}
+
+.blog-index__post:last-of-type {
+	margin-bottom: 1.25rem;
+}
+
+.blog-index__post .col-4 {
+	padding-right: 0.8rem;
+}
+
+.blog-index__post img {
+	display: block;
+	margin: 0 auto 1.875rem;
+}
+
+.blog-index__post a {
+	margin-top: 1.25rem;
 }
 
 }

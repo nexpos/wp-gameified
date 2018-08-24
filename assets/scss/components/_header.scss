@@ -4,7 +4,7 @@
 
 /* Nav Option 1 */
 .site-header {
-  position: absolute;
+  background-color: #a5c882;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -31,7 +31,6 @@
 
   &__mobile {
     padding-top: rem(5);
-    background-color: $white;
 
     .col-12 {
       display: flex;

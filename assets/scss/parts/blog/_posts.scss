@@ -11,7 +11,7 @@
        content: "";
        display: block;
        margin: 0 auto;
-       border-bottom: 2px solid $athens_gray;
+       border-bottom: 2px solid $slate;
        width: 65%;
        padding-bottom: rem(70);
      }
@@ -36,7 +36,7 @@
    &--border-bottom {
      height: rem(2);
      margin-top: rem(35);
-     background-color: $primary;
+     background-color: $greed;
    }
 
    .nav-links {
@@ -50,7 +50,7 @@
        width: rem(40);
        height: rem(40);
        border-radius: 50%;
-       background-color: $primary;
+       background-color: $greed;
        color: $white;
        opacity: .3;
 
@@ -64,7 +64,7 @@
      .prev {
        border-radius: 0;
        background-color: transparent;
-       color: $primary;
+       color: $greed;
        opacity: 1;
 
        i {
@@ -74,7 +74,7 @@
        }
 
        &:hover i {
-         color: $secondary;
+         color: $camaro;
        }
      }
    }
