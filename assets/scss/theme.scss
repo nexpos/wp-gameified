@@ -34,9 +34,11 @@
 @import 'components/footer';
 @import 'components/buttons';
 @import 'components/nav';
+@import 'components/forms';
 
 // Parts
 @import 'parts/home/home-hero';
+@import 'parts/home/large-text-section';
 
 // Plugin Overrides
 @import 'plugins/overrides';

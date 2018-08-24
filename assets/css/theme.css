@@ -2040,6 +2040,185 @@ nav a {
 }
 
 /*------------------------------------------------------------------------------
+  Forms
+------------------------------------------------------------------------------*/
+
+.gform_wrapper {
+	margin: 0 !important;
+}
+
+.gform_wrapper form .gform_fields {
+	display: -webkit-box !important;
+	display: -webkit-flex !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.gform_wrapper form .ginput_container {
+	width: 100% !important;
+}
+
+.gform_wrapper form .gfield {
+	margin-top: 0 !important;
+	padding: 0 !important;
+}
+
+.gform_wrapper form .full-width {
+	-webkit-flex-basis: 100%;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+}
+
+.gform_wrapper form label {
+	position: relative;
+	left: 0.3125rem;
+	font: 300 0.8125rem/1.125rem "Roboto", sans-serif !important;
+	color: #4e6766;
+	z-index: 1;
+}
+
+.gform_wrapper form input[type="text"],
+.gform_wrapper form input[type="email"],
+.gform_wrapper form input[type="tel"],
+.gform_wrapper form input[type="number"],
+.gform_wrapper form input[type="url"] {
+	width: 100% !important;
+	padding: 0.625rem 0.3125rem !important;
+	border-radius: 0 !important;
+	border: none;
+	border-bottom: 0.0625rem solid #4e6766;
+	background-color: #fff;
+	font: 300 1rem/1.0625rem "Roboto", sans-serif !important;
+	color: #4e6766;
+}
+
+.gform_wrapper form .ginput_container_select {
+	position: relative;
+}
+
+.gform_wrapper form .ginput_container_select:after {
+	position: absolute;
+	top: 0.3125rem;
+	right: 0.9375rem;
+	content: '\f0d7';
+	font-family: 'FontAwesome';
+	font-size: 1.25rem;
+	color: #a5c882;
+	-webkit-text-stroke: 0.0625rem #a5c882;
+	pointer-events: none;
+}
+
+.gform_wrapper form select {
+	width: 100% !important;
+	padding: 0.625rem 0.3125rem !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0 !important;
+	border: none;
+	border-bottom: 0.0625rem solid #a5c882 !important;
+	background-color: #fff;
+	font: 300 1rem/1.0625rem #a5c882;
+	color: #a5c882;
+}
+
+.gform_wrapper form select::-ms-expand {
+	display: none;
+}
+
+.gform_wrapper form textarea {
+	width: 100% !important;
+	padding: 0.625rem 0.3125rem !important;
+	border: 0.0625rem solid #000;
+	border-radius: 0 !important;
+	background-color: #fff;
+	font: 300 1rem/1.0625rem "Roboto", sans-serif !important;
+	color: #2075aa;
+}
+
+.gform_wrapper form .gfield_required {
+	color: #2075aa;
+}
+
+.gform_wrapper form .gform_footer {
+	position: relative;
+	display: inline-block !important;
+	width: auto;
+	padding: 0 !important;
+}
+
+.gform_wrapper form input[type="submit"] {
+	display: inline-block;
+	margin: 5px 0;
+	max-width: 100%;
+	text-align: center;
+	text-decoration: none;
+	font: 700 1.0625rem/1.0625rem "Roboto", sans-serif;
+	text-transform: uppercase;
+	border-radius: 6.25rem;
+	cursor: pointer;
+	margin: 0 !important;
+	border: none;
+	background-color: #185468;
+	padding: 15px 35px;
+	background: -webkit-gradient(linear, left top, right top, from(#185468), to(#2075aa));
+	background: -o-linear-gradient(left, #185468, #2075aa);
+	background: linear-gradient(to right, #185468, #2075aa);
+	color: #ffffff;
+	-webkit-transition: background .4s ease-out;
+	-o-transition: background .4s ease-out;
+	transition: background .4s ease-out;
+}
+
+.gform_wrapper form input[type="submit"]:hover {
+	background: #2075aa;
+	color: #ffffff;
+	background-position: 100px;
+}
+
+.gform_wrapper form input[type="submit"]:active,
+.gform_wrapper form input[type="submit"]:focus {
+	outline: none !important;
+}
+
+.gform_wrapper form .animated label {
+	top: 2.3125rem;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.gform_wrapper form .animated label.active-position {
+	top: 0;
+}
+
+.gform_wrapper form .animated label.active-weight {
+	font-weight: 700 !important;
+	color: #a5c882;
+}
+
+.gform_wrapper form .animated-color label.active-color {
+	color: #a5c882;
+}
+
+.gform_wrapper form .animated textarea:active,
+.gform_wrapper form .animated textarea:focus {
+	outline: none !important;
+	border: 0.0625rem solid #a5c882 !important;
+}
+
+.gform_wrapper form .animated input:active,
+.gform_wrapper form .animated input:focus,
+.gform_wrapper form .animated select:active,
+.gform_wrapper form .animated select:focus {
+	outline: none !important;
+	border-bottom: 0.0625rem solid #a5c882 !important;
+}
+
+/*------------------------------------------------------------------------------
   Home Hero
 ------------------------------------------------------------------------------*/
 
@@ -2053,6 +2232,26 @@ nav a {
 
 .home-button {
 	padding: 40px 0 0 0;
+}
+
+/*------------------------------------------------------------------------------
+  Large Text Section
+------------------------------------------------------------------------------*/
+
+.large-headlines {
+	padding-top: 70px;
+}
+
+.thunder {
+	color: #4e6766;
+}
+
+.columns {
+	padding: 70px 0;
+	-webkit-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 20px;
+	column-gap: 20px;
 }
 
 /*----------------------------------------------------------------------------
@@ -4115,6 +4314,13 @@ nav a {
 
 .home-hero__content {
 	padding: 145px 0;
+}
+
+.columns {
+	-webkit-column-count: 1;
+	column-count: 1;
+	text-align: center;
+	padding: 0 15px;
 }
 
 }

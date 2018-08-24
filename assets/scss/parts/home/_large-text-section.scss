@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------------------
+  Large Text Section
+------------------------------------------------------------------------------*/
+
+.large-headlines {
+  padding-top: 70px;
+}
+
+.thunder {
+  color: $slate;
+}
+
+.columns {
+  padding: 70px 0;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint) {
+  .columns {
+    column-count: 1;
+    text-align: center;
+    padding: 0 15px;
+  }
+}
