@@ -14,11 +14,11 @@ $mask-color:	rgba(0,0,0,0.62);
 $mask-index: 9998 !default;
 
 // hamburger options
-$hamburger-color: rgb(171,171,171);
+$hamburger-color: $white;
 $hamburger-color-active: rgb(171,171,171);
 
 $hamburger-position-top: 15px !default;
 $hamburger-position-x: 15px !default;
 
 // if false, hamburger will sit to the right instead of the left
-$hamburger-position-left: 'true' !default;
+$hamburger-position-left: 'false' !default;

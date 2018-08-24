@@ -15,12 +15,13 @@ $home_content = get_field('home_content');
 $btnToggle = get_field('button_toggle');
 $homeButton = get_field('home_button'); ?>
 
-<section class="container home-hero sm-hide" style="background: url('<?php echo $hero_image[0]; ?>') center/cover no-repeat">
+<section class="container home-hero" style="background: url('<?php echo $hero_image[0]; ?>') center/cover no-repeat">
 <div class="container home-hero__content">
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 sm-text-center">
       <div class="">
         <h1><?php echo $hero_header; ?></h1>
+      </div>
         <div class="">
           <?php echo $home_content; ?>
         </div>
@@ -34,27 +35,4 @@ $homeButton = get_field('home_button'); ?>
       </div>
     </div>
   </div>
-</div>
-</section>
-
-<section class="container home-hero sm-only" style="background: url('<?php echo $hero_image[0]; ?>') left bottom/cover no-repeat">
-<div class="container home-hero__content">
-  <div class="row">
-    <div class="col-6">
-      <div class="">
-        <h1><?php echo $hero_header; ?></h1>
-        <div class="">
-          <?php echo $home_content; ?>
-        </div>
-        <div class="home-button">
-          <? if( $btnToggle ) : ?>
-            <a href="<?php echo $homeButton['url']; ?>" class="button button--secondary" role="link" title="<?php echo $homeButton['title']; ?>">
-            <?php echo $homeButton['title']; ?>
-            </a>
-          <?php endif; ?>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 </section>
