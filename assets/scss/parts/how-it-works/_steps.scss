@@ -1,0 +1,32 @@
+/*------------------------------------------------------------------------------
+  Steps
+------------------------------------------------------------------------------*/
+.content__block { // Update .content to use descriptive class name
+  padding: 100px 0;
+
+  h2 {
+    font-size: 32px;
+    color: $greed;
+    margin-bottom: 65px;
+  }
+
+  .fas {
+    font-size: 32px;
+    color: $ocean;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding: rem(50);
+    border: rem(1) solid #e4f1fd;
+    border-radius: rem(5);
+
+    .block__link {
+      align-self: flex-end;
+    }
+  }
+}

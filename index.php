@@ -6,7 +6,7 @@
 <section class="container">
   <div class="row">
     <div class="col-12 text-center blog-index">
-      <h1>Read our blog</h1>
+      <h1 style="color:#a5c882;">Read our blog</h1>
     </div>
   </div>
 
@@ -23,7 +23,7 @@
 </section>
   <?php else : ?>
 
-  <div class="row">
+    <div class="row">
       <div class="col-12 text-center">
         <h2>Sorry, no posts have been found</h2>
       </div>

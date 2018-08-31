@@ -1660,7 +1660,7 @@ a {
 	margin: 0 0 1.25rem 0;
 	font: 400 1.125rem/1.4375rem "Open Sans", sans-serif;
 	color: #185468;
-	text-decoration: underline;
+	text-decoration: none;
 	-webkit-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
@@ -1781,6 +1781,7 @@ a {
 	left: 0;
 	z-index: 9999;
 	padding: .9375rem 0;
+	position: absolute;
 }
 
 .site-header__utility {
@@ -2222,7 +2223,7 @@ nav a {
 ------------------------------------------------------------------------------*/
 
 .home-hero__content {
-	padding: 100px 0 200px 0;
+	padding: 200px 0 100px 0;
 }
 
 .home-hero__content p {
@@ -2314,6 +2315,7 @@ nav a {
 
 .blog-index__post h2 a {
 	display: inline;
+	font-size: 24px;
 }
 
 .blog-index__post a {
@@ -2380,6 +2382,66 @@ nav a {
 .blog-index .nav-links .next:hover i,
 .blog-index .nav-links .prev:hover i {
 	color: #2075aa;
+}
+
+/*------------------------------------------------------------------------------
+  Global Hero
+------------------------------------------------------------------------------*/
+
+.default-hero {
+	max-width: 100%;
+	height: 530px;
+}
+
+.default-hero__content {
+	padding-top: 200px;
+}
+
+/*------------------------------------------------------------------------------
+  Steps
+------------------------------------------------------------------------------*/
+
+.content__block {
+	padding: 100px 0;
+}
+
+.content__block h2 {
+	font-size: 32px;
+	color: #a5c882;
+	margin-bottom: 65px;
+}
+
+.content__block .fas {
+	font-size: 32px;
+	color: #185468;
+}
+
+.content__block__block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	height: 100%;
+	padding: 3.125rem;
+	border: 0.0625rem solid #e4f1fd;
+	border-radius: 0.3125rem;
+}
+
+.content__block__block .block__link {
+	-webkit-align-self: flex-end;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
 }
 
 /*----------------------------------------------------------------------------
@@ -4478,6 +4540,10 @@ nav a {
 
 .blog-index__post a {
 	margin-top: 1.25rem;
+}
+
+.default-hero__content {
+	padding: 165px 0;
 }
 
 }

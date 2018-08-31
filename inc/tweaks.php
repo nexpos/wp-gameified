@@ -31,7 +31,7 @@
     }
     add_action( 'after_setup_theme', 'prelude_features' );
   }
-  
+
   // Set the maximum content width for the theme
   function prelude_content_width() {
     $GLOBALS[ 'content_width' ] = apply_filters( 'prelude_content_width', 1200 );
@@ -46,8 +46,8 @@
 
   // Customize the default read more link
   function prelude_continue_reading_link() {
-    return ' <a href="' . get_permalink() . '">' .
-     __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'theme-slug' ) .
+    return ' <a class="button button--primary" href="' . get_permalink() . '">' .
+     __( 'READ MORE', 'theme-slug' ) .
      '</a>';
   }
 
