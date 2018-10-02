@@ -11,4 +11,5 @@
 get_header();
 get_template_part('parts/global/global-hero');
 get_template_part('parts/how-it-works/steps');
+get_template_part('parts/how-it-works/case-study');
 get_footer(); ?>

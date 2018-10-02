@@ -18,7 +18,7 @@ $homeButton = get_field('home_button'); ?>
 <section class="container home-hero" style="background: url('<?php echo $hero_image[0]; ?>') center/cover no-repeat">
 <div class="container home-hero__content">
   <div class="row">
-    <div class="col-6 sm-text-center">
+    <div class="col-10 col-centered sm-text-center">
       <div class="">
         <h1><?php echo $hero_header; ?></h1>
       </div>

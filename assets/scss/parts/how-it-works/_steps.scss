@@ -1,13 +1,21 @@
 /*------------------------------------------------------------------------------
   Steps
 ------------------------------------------------------------------------------*/
-.content__block { // Update .content to use descriptive class name
-  padding: 100px 0;
+.block__header {
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+.content__block {
+  padding: 70px 0;
 
   h2 {
     font-size: 32px;
     color: $greed;
     margin-bottom: 65px;
+  }
+
+  h3 {
+    padding: 20px 0;
   }
 
   .fas {

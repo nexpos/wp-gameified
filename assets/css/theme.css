@@ -2031,7 +2031,7 @@ nav li {
 nav a {
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: 60%;
 }
 
 .nifty-panel {
@@ -2055,15 +2055,57 @@ nav a {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	-ms-flex-flow: column;
+	flex-flow: column;
 }
 
 .gform_wrapper form .ginput_container {
 	width: 100% !important;
 }
 
+.gform_wrapper form #input_1_34,
+.gform_wrapper form #input_1_3 {
+	width: 20% !important;
+}
+
+.gform_wrapper form #input_1_33 {
+	width: 100% !important;
+}
+
+.gform_wrapper form #input_1_8,
+.gform_wrapper form #input_1_31,
+.gform_wrapper form #input_1_9,
+.gform_wrapper form #input_1_11 {
+	width: 25% !important;
+}
+
+.gform_wrapper form #input_1_13,
+.gform_wrapper form #input_1_14,
+.gform_wrapper form #input_1_16,
+.gform_wrapper form #input_1_17,
+.gform_wrapper form #input_1_18,
+.gform_wrapper form #input_1_19,
+.gform_wrapper form #input_1_20,
+.gform_wrapper form #input_1_21,
+.gform_wrapper form #input_1_22 {
+	width: 55% !important;
+}
+
+.gform_wrapper form table.gfield_list th {
+	font-size: 12px;
+	font-weight: 400 !important;
+}
+
 .gform_wrapper form .gfield {
 	margin-top: 0 !important;
 	padding: 0 !important;
+}
+
+.gform_wrapper form .gfield_label {
+	font-weight: bold !important;
 }
 
 .gform_wrapper form .full-width {
@@ -2087,9 +2129,8 @@ nav a {
 .gform_wrapper form input[type="url"] {
 	width: 100% !important;
 	padding: 0.625rem 0.3125rem !important;
-	border-radius: 0 !important;
-	border: none;
-	border-bottom: 0.0625rem solid #4e6766;
+	border-radius: 8px !important;
+	border: 0.0625rem solid #4e6766;
 	background-color: #fff;
 	font: 300 1rem/1.0625rem "Roboto", sans-serif !important;
 	color: #4e6766;
@@ -2117,9 +2158,8 @@ nav a {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border-radius: 0 !important;
-	border: none;
-	border-bottom: 0.0625rem solid #a5c882 !important;
+	border-radius: 8px !important;
+	border: 0.0625rem solid #a5c882 !important;
 	background-color: #fff;
 	font: 300 1rem/1.0625rem #a5c882;
 	color: #a5c882;
@@ -2215,7 +2255,7 @@ nav a {
 .gform_wrapper form .animated select:active,
 .gform_wrapper form .animated select:focus {
 	outline: none !important;
-	border-bottom: 0.0625rem solid #a5c882 !important;
+	border: 0.1875rem solid #a5c882 !important;
 }
 
 /*------------------------------------------------------------------------------
@@ -2289,7 +2329,7 @@ nav a {
 ------------------------------------------------------------------------------*/
 
 .blog-index {
-	padding: 5.625rem 0 4.1875rem 0;
+	padding: 200px 0 0 0;
 }
 
 .blog-index__post {
@@ -2401,14 +2441,23 @@ nav a {
   Steps
 ------------------------------------------------------------------------------*/
 
+.block__header {
+	margin-top: 50px;
+	text-transform: uppercase;
+}
+
 .content__block {
-	padding: 100px 0;
+	padding: 70px 0;
 }
 
 .content__block h2 {
 	font-size: 32px;
 	color: #a5c882;
 	margin-bottom: 65px;
+}
+
+.content__block h3 {
+	padding: 20px 0;
 }
 
 .content__block .fas {

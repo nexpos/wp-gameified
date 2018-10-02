@@ -9,15 +9,40 @@
     .gform_fields {
       display: flex !important;
       flex-wrap: wrap;
+      flex-flow: column;
     }
 
     .ginput_container {
       width: 100% !important;
     }
 
+    #input_1_34, #input_1_3 {
+      width: 20% !important;
+    }
+    #input_1_33 {
+      width: 100% !important;
+    }
+
+    #input_1_8, #input_1_31, #input_1_9, #input_1_11  {
+      width: 25% !important;
+    }
+
+    #input_1_13, #input_1_14, #input_1_16, #input_1_17, #input_1_18, #input_1_19, #input_1_20, #input_1_21, #input_1_22 {
+      width: 55% !important;
+    }
+
+    table.gfield_list th {
+      font-size: 12px;
+      font-weight: 400 !important;
+    }
+
     .gfield {
       margin-top: 0 !important;
       padding: 0 !important;
+    }
+
+    .gfield_label {
+      font-weight: bold !important;
     }
 
     .full-width {
@@ -36,9 +61,8 @@
     input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"] {
       width: 100% !important;
       padding: rem(10) rem(5) !important;
-      border-radius: 0 !important;
-      border: none;
-      border-bottom: rem(1) solid $slate;
+      border-radius: 8px !important;
+      border: rem(1) solid $slate;
       background-color: #fff;
       font: 300 rem(16)/rem(17) $roboto !important;
       color: $slate;
@@ -64,9 +88,8 @@
       width: 100% !important;
       padding: rem(10) rem(5) !important;
       appearance: none;
-      border-radius: 0 !important;
-      border: none;
-      border-bottom: rem(1) solid $greed !important;
+      border-radius: 8px !important;
+      border: rem(1) solid $greed !important;
       background-color: #fff;
       font: 300 rem(16)/rem(17) $greed;
       color: $greed;
@@ -165,7 +188,7 @@
         &:active,
         &:focus {
           outline: none !important;
-          border-bottom: rem(1) solid $greed !important;
+          border: rem(3) solid $greed !important;
         }
       }
     }

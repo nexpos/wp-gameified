@@ -6,7 +6,7 @@
 <section class="container">
   <div class="row">
     <div class="col-12 text-center blog-index">
-      <h1 style="color:#a5c882;">Read our blog</h1>
+      <h1 style="color:#a5c882;">Read our blog and case studies</h1>
     </div>
   </div>
 
